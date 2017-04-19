@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleAnimations" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +20,202 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xx-qO-PWZ">
+                                <rect key="frame" x="60" y="60" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="淡化效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlA-2g-Njx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-Gp-IcH">
+                                <rect key="frame" x="60" y="130" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="push效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjK-4O-VEn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM3-kq-R1A">
+                                <rect key="frame" x="60" y="200" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="揭开效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZk-iD-YpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkE-pU-quD">
+                                <rect key="frame" x="60" y="270" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="覆盖效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERu-Mr-eeR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxe-KV-Cne">
+                                <rect key="frame" x="60" y="340" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3D立方效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tb0-Gg-rUI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVx-vk-gNO">
+                                <rect key="frame" x="60" y="410" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="吮吸效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0q-7Z-pG0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyl-ga-AhQ">
+                                <rect key="frame" x="60" y="480" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="翻转效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqD-Lw-JhH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R48-iB-xqY">
+                                <rect key="frame" x="217" y="60" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="翻页效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKa-uS-Ce2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeG-2M-t0n">
+                                <rect key="frame" x="217" y="130" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="反翻页效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1y1-ge-f8a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABo-RA-bLh">
+                                <rect key="frame" x="217" y="200" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="开镜头效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ag-ZT-ygn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGe-1e-6sz">
+                                <rect key="frame" x="217" y="270" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="关镜头效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxh-Ps-LDy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjH-vv-jeU">
+                                <rect key="frame" x="217" y="340" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="下翻页效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0L-Ib-Bwv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-Hg-fSO">
+                                <rect key="frame" x="217" y="410" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="上翻页效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0PF-da-A7y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vce-ox-nUa">
+                                <rect key="frame" x="217" y="480" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="左翻转效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8di-Xh-JrJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqK-aB-wsI">
+                                <rect key="frame" x="217" y="550" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="右翻转效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1F-pp-en7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jk-An-x6F">
+                                <rect key="frame" x="60" y="550" width="97.5" height="30"/>
+                                <color key="backgroundColor" red="0.39870707214029438" green="0.80251190424712016" blue="0.83284422588832485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="波纹效果"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nYN-5M-Mt9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2xx-qO-PWZ" firstAttribute="width" secondItem="R48-iB-xqY" secondAttribute="width" id="1B1-6g-8GB"/>
+                            <constraint firstItem="pxe-KV-Cne" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="1Wk-PK-HOP"/>
+                            <constraint firstItem="ABo-RA-bLh" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="3tZ-7n-EDy"/>
+                            <constraint firstItem="9Jk-An-x6F" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="3x9-BU-yn2"/>
+                            <constraint firstItem="LeG-2M-t0n" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="5G3-r9-w1o"/>
+                            <constraint firstItem="9Jk-An-x6F" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="6UT-gF-2U6"/>
+                            <constraint firstItem="qjH-vv-jeU" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="7ug-UQ-lBD"/>
+                            <constraint firstItem="LeG-2M-t0n" firstAttribute="top" secondItem="wOt-Gp-IcH" secondAttribute="top" id="8Ye-jb-C6T"/>
+                            <constraint firstItem="9Jk-An-x6F" firstAttribute="top" secondItem="Vyl-ga-AhQ" secondAttribute="bottom" constant="40" id="99n-jq-gs1"/>
+                            <constraint firstItem="KqK-aB-wsI" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="B0V-OM-Ujz"/>
+                            <constraint firstItem="2xx-qO-PWZ" firstAttribute="height" secondItem="R48-iB-xqY" secondAttribute="height" id="BCs-FQ-7kq"/>
+                            <constraint firstItem="4c0-Hg-fSO" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="BoY-Rg-YXc"/>
+                            <constraint firstItem="HGe-1e-6sz" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="CTm-X1-bBx"/>
+                            <constraint firstItem="wOt-Gp-IcH" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="Dsp-bg-luQ"/>
+                            <constraint firstItem="2xx-qO-PWZ" firstAttribute="top" secondItem="R48-iB-xqY" secondAttribute="top" id="EfJ-Mu-9NE"/>
+                            <constraint firstItem="Vyl-ga-AhQ" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="EoU-YK-ySU"/>
+                            <constraint firstItem="qjH-vv-jeU" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="FTC-O7-oTi"/>
+                            <constraint firstItem="pxe-KV-Cne" firstAttribute="top" secondItem="BkE-pU-quD" secondAttribute="bottom" constant="40" id="IOd-ni-wNR"/>
+                            <constraint firstItem="HGe-1e-6sz" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="NOK-uT-3qX"/>
+                            <constraint firstItem="pxe-KV-Cne" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="OKf-Us-kgj"/>
+                            <constraint firstItem="LeG-2M-t0n" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="Oqe-AS-ZZa"/>
+                            <constraint firstItem="Vyl-ga-AhQ" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="PnU-ek-Jzb"/>
+                            <constraint firstItem="KqK-aB-wsI" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="QI0-k3-yW2"/>
+                            <constraint firstItem="KqK-aB-wsI" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="QbI-8e-tdw"/>
+                            <constraint firstItem="cM3-kq-R1A" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="Rb6-Cc-XI8"/>
+                            <constraint firstItem="ABo-RA-bLh" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="SjP-tm-P6n"/>
+                            <constraint firstItem="cM3-kq-R1A" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="T1J-yQ-sVh"/>
+                            <constraint firstItem="Vyl-ga-AhQ" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="T7K-on-JFB"/>
+                            <constraint firstItem="cM3-kq-R1A" firstAttribute="top" secondItem="wOt-Gp-IcH" secondAttribute="bottom" constant="40" id="X3x-jP-9Ii"/>
+                            <constraint firstItem="ABo-RA-bLh" firstAttribute="top" secondItem="cM3-kq-R1A" secondAttribute="top" id="Xws-r2-vkS"/>
+                            <constraint firstAttribute="trailing" secondItem="R48-iB-xqY" secondAttribute="trailing" constant="60" id="a8s-zU-Frf"/>
+                            <constraint firstItem="wOt-Gp-IcH" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="bQx-hj-YqH"/>
+                            <constraint firstItem="vce-ox-nUa" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="cAi-1x-pOd"/>
+                            <constraint firstItem="R48-iB-xqY" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="trailing" constant="60" id="d11-Uw-dTW"/>
+                            <constraint firstItem="pxe-KV-Cne" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="dQr-9B-dcv"/>
+                            <constraint firstItem="KqK-aB-wsI" firstAttribute="top" secondItem="9Jk-An-x6F" secondAttribute="top" id="dqL-K5-lEP"/>
+                            <constraint firstItem="BkE-pU-quD" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="f8d-SR-E07"/>
+                            <constraint firstItem="mVx-vk-gNO" firstAttribute="top" secondItem="pxe-KV-Cne" secondAttribute="bottom" constant="40" id="fBN-9l-uWm"/>
+                            <constraint firstItem="vce-ox-nUa" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="gLE-tj-Up1"/>
+                            <constraint firstItem="ABo-RA-bLh" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="jls-ei-7dy"/>
+                            <constraint firstItem="qjH-vv-jeU" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="o07-j9-zGf"/>
+                            <constraint firstItem="mVx-vk-gNO" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="o9U-gG-ILs"/>
+                            <constraint firstItem="LeG-2M-t0n" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="pCH-iQ-x2u"/>
+                            <constraint firstItem="HGe-1e-6sz" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="q8q-2P-5yn"/>
+                            <constraint firstItem="4c0-Hg-fSO" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="qeg-eK-e5i"/>
+                            <constraint firstItem="BkE-pU-quD" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="qlZ-Md-owe"/>
+                            <constraint firstItem="mVx-vk-gNO" firstAttribute="height" secondItem="2xx-qO-PWZ" secondAttribute="height" id="r1f-PU-Afj"/>
+                            <constraint firstItem="9Jk-An-x6F" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="r7l-9O-uYD"/>
+                            <constraint firstItem="4c0-Hg-fSO" firstAttribute="top" secondItem="mVx-vk-gNO" secondAttribute="top" id="rSW-vB-JHz"/>
+                            <constraint firstItem="2xx-qO-PWZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="sqw-AA-aWg"/>
+                            <constraint firstItem="mVx-vk-gNO" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="st6-Xi-HHu"/>
+                            <constraint firstItem="Vyl-ga-AhQ" firstAttribute="top" secondItem="mVx-vk-gNO" secondAttribute="bottom" constant="40" id="tPs-e7-qXy"/>
+                            <constraint firstItem="vce-ox-nUa" firstAttribute="top" secondItem="Vyl-ga-AhQ" secondAttribute="top" id="txF-bv-H5B"/>
+                            <constraint firstItem="HGe-1e-6sz" firstAttribute="top" secondItem="BkE-pU-quD" secondAttribute="top" id="u9u-qs-qPv"/>
+                            <constraint firstItem="cM3-kq-R1A" firstAttribute="width" secondItem="2xx-qO-PWZ" secondAttribute="width" id="uFp-vX-71V"/>
+                            <constraint firstItem="2xx-qO-PWZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="ubY-ax-VuK"/>
+                            <constraint firstItem="wOt-Gp-IcH" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="vfI-5A-Uld"/>
+                            <constraint firstItem="4c0-Hg-fSO" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="wdP-n7-r4N"/>
+                            <constraint firstItem="vce-ox-nUa" firstAttribute="leading" secondItem="R48-iB-xqY" secondAttribute="leading" id="xFR-b6-L3g"/>
+                            <constraint firstItem="BkE-pU-quD" firstAttribute="leading" secondItem="2xx-qO-PWZ" secondAttribute="leading" id="xsA-U0-1eE"/>
+                            <constraint firstItem="wOt-Gp-IcH" firstAttribute="top" secondItem="2xx-qO-PWZ" secondAttribute="bottom" constant="40" id="y3J-FU-IP3"/>
+                            <constraint firstItem="qjH-vv-jeU" firstAttribute="top" secondItem="pxe-KV-Cne" secondAttribute="top" id="z5L-Fr-TrY"/>
+                            <constraint firstItem="BkE-pU-quD" firstAttribute="top" secondItem="cM3-kq-R1A" secondAttribute="bottom" constant="40" id="zo9-BG-Ile"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
